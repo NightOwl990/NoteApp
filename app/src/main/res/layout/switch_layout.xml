@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/custom_menu_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custom Item" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/custom_menu_item_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:checked="false" />
+
+</LinearLayout>

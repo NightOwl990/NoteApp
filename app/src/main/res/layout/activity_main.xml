@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_main"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:layout_alignParentTop="true"
+        app:title="Sổ ghi chú"
+        app:titleTextColor="@color/white"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/toolbar_main"
+        android:layout_above="@+id/adView"
+        android:id="@+id/rcv_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        app:backgroundTint="@color/primary"
+        android:id="@+id/btn_them"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/primary"
+        android:src="@drawable/ic_add"
+        app:tint="#FFFFFF"
+        android:contentDescription="@string/todo"
+        tools:ignore="RtlHardcoded"
+        android:layout_above="@+id/adView"
+        android:layout_alignParentEnd="true"/>
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:id="@+id/layout_null"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables">
+        <ImageView
+            android:id="@+id/img_null"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/img_null"
+            app:backgroundTint="#808080"
+            android:contentDescription="@string/todo1" />
+        <TextView
+            android:id="@+id/tv_null"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#808080"
+            android:text="@string/t_o_ghi_ch_u_ti_n_c_a_b_n"/>
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:layout_gravity="bottom"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ad_unit_banner"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

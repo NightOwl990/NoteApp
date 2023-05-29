@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:background="#F64F42"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Xóa"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_toStartOf="@+id/img_delete"/>
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/img_delete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_delete"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/item_layout"
+        android:padding="16dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <TextView
+            android:id="@+id/tv_noi_dung"
+            android:layout_gravity="center"
+            android:layout_weight="9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/y_l_app_ghi_ch_c_a_ch_nh_bla_bla_bla_bla_bla_bla_bla_bla"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <ImageView
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_menu"
+            app:tint="#808080"/>
+    </LinearLayout>
+
+
+</FrameLayout>

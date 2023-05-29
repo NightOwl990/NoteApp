@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Ghi chú</string>
+    <string name="y_l_app_ghi_ch_c_a_ch_nh_bla_bla_bla_bla_bla_bla_bla_bla">Đây là app ghi chú của Chính bla bla bla bla bla bla bla bla</string>
+    <string name="dau_cong">+</string>
+    <string name="todo">TODO</string>
+    <!--Ad unit-->
+    <string name="ad_unit_banner">ca-app-pub-5153553198170476/9297669196</string>
+    <string name="ad_unit_full">ca-app-pub-8567317612161629/2966569195</string>
+    <string name="t_o_ghi_ch_u_ti_n_c_a_b_n">Tạo ghi chú đầu tiên của bạn</string>
+    <string name="todo1">TODO</string>
+</resources>

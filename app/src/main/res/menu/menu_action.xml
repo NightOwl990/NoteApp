@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/item_undo"
+        android:title="Hoàn tác"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_undo"/>
+
+    <item android:id="@+id/item_redo"
+        android:title="Làm lại"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_redo"/>
+
+    <item android:id="@+id/item_delte"
+        android:title="Xóa"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_delete"/>
+
+    <item android:id="@+id/item_share"
+        android:title="Chia sẻ"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_share"/>
+</menu>
